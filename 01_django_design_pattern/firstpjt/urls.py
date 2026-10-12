@@ -20,6 +20,9 @@ from articles import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('articles/', articles/로 요청이 들어왔을 때 호출할 view 함수를 작성)    
-    path('articles/', views.index)
+    # path('articles/', articles/로 요청이 들어왔을 때 호출할 view 함수를 작성)
+    # articles/ 주소로 요청이 오면 index 뷰함수를 호출 하겠다.
+    # index를 index() 괄호를 작성하지 않은 이유
+        # view 함수의 호출은 왼쪽 인자 주소로 요청이 "왔을 때" 호출이 되어야하기 떄문에 함수 주소만 기록해 둠
+    path('articles/', views.index),
 ]
