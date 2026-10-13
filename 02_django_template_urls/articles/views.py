@@ -13,7 +13,7 @@ def index(request):
     # index 템플릿에서 사용할 데이터를 정의
     # 딕셔너리 이름이 반드시 context일 필요는 없으나 보통은 context로 지정
     context = {
-        'name': 'jane',
+        'name': 'Jane',
     }
     return render(request, 'articles/index.html', context)
 
