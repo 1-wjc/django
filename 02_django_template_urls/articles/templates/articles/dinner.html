@@ -3,13 +3,13 @@
 {% block content %}
   <h1>저녁 메뉴판</h1>
   
-  <p>{{ picked }} 메뉴는 {{ picked|length}}글자 입니다.</p>
+  <p>{{ picked }} 메뉴는 {{ picked|length }}글자 입니다.</p>
 
   <h2>메뉴판</h2>
   <ul>
     {% for food in foods %}
       <li>{{ food }}</li>
-      {% endfor %}
+    {% endfor %}
   </ul>
 
   {% if foods|length == 0 %}
