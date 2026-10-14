@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>로그인 화면</h2>
+  <hr>
+  <!-- action은 사용자의 요청을 처리하는 곳으로 설정 -->
+  <form action="{% url "articles:auth" %}">
+    <label for="user-id">User ID: </label>
+    <input type="text" id="user-id" name="userid">
+    <br> <!-- 줄 바꿈 -->
+    <label for="pw">Password: </label>
+    <input type="password" id="pw" name="pw">
+    <br>
+    <button>제출하기</button>
+  </form>
+</body>
+</html>
