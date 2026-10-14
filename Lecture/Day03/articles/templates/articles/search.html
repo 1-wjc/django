@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>검색 페이지</h2>
+<hr>
+<form action="{% url "articles:find" %}">
+  <input type="text" name="q">
+  <button>검색</button>
+</form>
+
+{% endblock content %}
